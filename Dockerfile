@@ -21,7 +21,7 @@ CMD cd /src/workspace && \
 git clone --recurse-submodules https://github.com/lvgl/lvgl.git && \ 
 cd lvgl && \
 git checkout v8.3.9 && \
-cmake.exe \
+cmake \
 -DCMAKE_BUILD_TYPE=Release \
 -DBUILD_SHARED_LIBS=OFF \
 -DLV_CONF_BUILD_DISABLE_EXAMPLES=ON \
