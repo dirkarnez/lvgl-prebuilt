@@ -32,5 +32,5 @@ cmake.exe \
 -DCMAKE_INSTALL_PREFIX="cmake-build/lvgl-installation" -B./cmake-build && \
 cd cmake-build && cmake --build . && cmake --install .  && \
 cd lvgl-installation && \
-zip --symlinks -r lvgl-v8.3.6.zip . && \
+zip --symlinks -r lvgl-v8.3.9.zip . && \
 exit
