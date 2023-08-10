@@ -29,6 +29,7 @@ cmake \
 -DCMAKE_CXX_COMPILER=aarch64-none-elf-g++ \
 -DCMAKE_C_COMPILER=aarch64-none-elf-gcc \
 -DCMAKE_LINKER=aarch64-none-elf-ld \
+-DCMAKE_EXE_LINKER_FLAGS="--specs=nosys.specs" \
 -DCMAKE_INSTALL_PREFIX="cmake-build/lvgl-installation" -B./cmake-build && \
 cd cmake-build && cmake --build . && cmake --install .  && \
 cd lvgl-installation && \
