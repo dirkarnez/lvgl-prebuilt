@@ -18,6 +18,7 @@ RUN sudo mkdir -p /src/workspace
 VOLUME /src/workspace
 
 CMD cd /src/workspace && \
+aarch64-none-elf-g++ --version && \
 git clone --recurse-submodules https://github.com/lvgl/lvgl.git && \ 
 cd lvgl && \
 git checkout v8.3.9 && \
